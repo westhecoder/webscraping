@@ -12,6 +12,8 @@ SIMPLE_HTML = '''<!DOCTYPE html>
     <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
     <p>Here's another p without a class </p>
 
+    <h1>This is the second title</h1>
+
     <ul>
       <li>Rolf</li>
       <li>Charlie</li>
@@ -26,12 +28,14 @@ simple_soup = BeautifulSoup(SIMPLE_HTML, 'html.parser')
 
 
 def find_title():
+    # this will bring all the h1 headers in the doc, find_all brings a litst of items
     h1_tag = simple_soup.find('h1')
     print(h1_tag.string)
 
 
 def find_list_items():
     list_items = simple_soup.find_all('li')
+    # for every item(e) in list  called list_items, new list name is e.string
     list_contents = [e.string for e in list_items]
     print(list_contents)
 
