@@ -47,13 +47,6 @@ ITEM_HTML = '''<!DOCTYPE html>
 </html>
 '''
 
-
-class ParsedItem:
-    '''
-    A class to take in an html page or part of it and find properties of items in it
-    '''
-
-
 soup = BeautifulSoup(ITEM_HTML, 'html.parser')
 
 
