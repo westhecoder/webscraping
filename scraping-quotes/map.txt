@@ -1,0 +1,12 @@
+app -> locator -> pages -> parsers
+
+this separates different parts of our program
+locators - how we can find things
+pages - code to use locators to find certain things in page
+parsers - for specific things we want to work with.
+
+
+we get the page content
+
+separate concerns, separate the locators away from logic
+separate the page away from components 
