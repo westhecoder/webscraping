@@ -1,6 +1,7 @@
 from bs4 import BeautifulSoup
 
 from locators.all_books_page import AllBooksPageLocators
+from parsers.book_parser import BookParser
 ''''
 takes the entire html content and pass it in with bs4
 '''
