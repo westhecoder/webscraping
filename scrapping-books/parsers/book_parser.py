@@ -12,11 +12,11 @@ class BookParser:
         'Two': 2,
         'Three': 3,
         'Four': 4,
-        'Five': 5,
+        'Five': 5
     }
 
     def __init__(self, parent):
-        self.parent = parent
+        self.parent = parent # parent is already a soup object
 
     def __repr__(self):
         return f'<Book {self.name}, {self.price} ({self.rating} stars)>'
@@ -60,6 +60,7 @@ class BookParser:
         # print(star_rating_tag)
         classes = star_rating_tag.attrs['class']
         rating_classes = [r for r in classes if r != 'star-rating']
+        #return rating_classes[0]
 
         rating_number = BookParser.RATINGS.get(rating_classes[0]) #none if not found
         return rating_number
