@@ -1,0 +1,7 @@
+10-06-2021 17:09:01 INFO     [app.py:13] Loading books list...
+10-06-2021 17:09:02 INFO     [all_books_page.py:27] Found number of catalogue pages available: `
+            
+                Page 1 of 50
+            
+            `.
+10-06-2021 17:10:43 INFO     [menu.py:31] Getting next book from generator of all books...
